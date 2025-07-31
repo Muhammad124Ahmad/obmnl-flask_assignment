@@ -69,6 +69,7 @@
         <div class="d-flex justify-content-center">
             <a class="btn btn-success" href="{{ url_for('add_transaction') }}">Add Transaction</a>
         </div>
+        <p>{{"TOTAL BALANCE : " if total_balance else ""}}{{total_balance or ""}}</p>
     </div>
 </body>
 </html>
